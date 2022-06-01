@@ -1,22 +1,20 @@
+
 public class RandomNumber {
+    public static void main(String[] args) {
 
-     public static void main(String[] args) {
+        float sum = 0;
+        for (int i = 0; i <= 5; i++) {
+            int random = (int) ((Math.random() * 10) * 1);
 
-         // generating random numbers between0 to 1
-         System.out.println("1st Random Number:"+Math.random());
-         System.out.println("2nd Random Number:"+Math.random());
-         System.out.println("3rd Random Number:"+Math.random());
-         System.out.println("4th Random Number:"+Math.random());
-         System.out.println("5th Random Number:"+Math.random());
+            System.out.println(random);
 
-         // finding the average value
-         System.out.println();
+            sum = sum + random;
+        }
+        System.out.println("sum of random numbers is " + sum);
+        float avg = sum / 5;
+        System.out.println("Average value is" + avg);
 
-         // finding maximum value
-         System.out.println(Math.max());
-
-     }
-          // finding minimum value
-         System.out.println(Math.min());
     }
+
 }
+
